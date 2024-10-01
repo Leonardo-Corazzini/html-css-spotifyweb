@@ -33,6 +33,13 @@ img{
     width: 230px;
     flex-shrink: 0;
     background-color: var(--sidebar-color);
+    padding: 20px;
+}
+.sidebar .logo{
+    width: 140px;
+}
+.logo-sm{
+    display: none;
 }
 .music-section{
     flex-grow: 1;
@@ -144,6 +151,13 @@ img{
 @media (max-width: 576px){
     .sidebar{
         width: 50px;
+        padding: 8px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-sm{
+        display: block;
     }
     .music-selected-info{
         margin-right: 10px;
