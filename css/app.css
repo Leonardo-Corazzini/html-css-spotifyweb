@@ -49,7 +49,24 @@ img{
     height: 45px;
     
     
-}   
+}  
+.console{
+
+} 
+/* MEDIA QUERIES */
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 576px){
+    .sidebar{
+        width: 50px;
+    }
+}
+
+
 /* DEBUG RULES */
 .debug .main-view{
     border: 2px solid red;
