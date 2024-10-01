@@ -12,6 +12,7 @@
 }
 img{
     width: 100%;
+    display: block;
 }
 .main-view{
     height: 100vh;
@@ -38,8 +39,17 @@ img{
 }
 .music-selected{
     display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
 
 }
+.brano-img{
+    aspect-ratio: 1/1;
+    height: 45px;
+    
+    
+}   
 /* DEBUG RULES */
 .debug .main-view{
     border: 2px solid red;
