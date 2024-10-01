@@ -2,6 +2,7 @@
     --player-color: #282828;
     --sidebar-color: #000000;
     --musicsection-color: #141922;
+    --bar-color: #5A5A5A;
 }
 /* RESET RULES */
 *{
@@ -14,6 +15,7 @@ img{
     width: 100%;
     display: block;
 }
+/* MAIN STYLE */
 .main-view{
     height: 100vh;
     display: flex;
@@ -32,10 +34,15 @@ img{
     flex-grow: 1;
     background-color: var(--musicsection-color);
 }
+/* PLAYER STYLE */
 .player{
     background-color: var(--player-color);
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 15px 10px 25px;
+    align-items: center;
 }
 .music-selected{
     display: flex;
@@ -51,8 +58,50 @@ img{
     
 }  
 .console{
-
+    width: 40%;
 } 
+.player-btn{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.player-timebar{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.timebar{
+    flex-grow: 1;
+    
+}
+.timebar .bar{
+    background-color: var(--bar-color);
+    width: 100%;
+}
+.timebar .listened-time{
+    height: 5px;
+    width: 20%;
+    background-color: white;
+}
+.volume{
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+.volumebar{
+    width: 60%;
+}
+.volumebar .bar{
+    width: 100%;
+    background-color: var(--bar-color);
+}
+.volumebar .volume-high{
+    height: 5px;
+    width: 20%;
+    background-color: white;
+}
 /* MEDIA QUERIES */
 @media (max-width: 992px){
 
