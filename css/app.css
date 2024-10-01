@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-family: "Poppins", sans-serif;
+}
 :root{
     --player-color: #282828;
     --sidebar-color: #000000;
@@ -52,6 +56,16 @@ img{
     align-items: center;
 
 }
+.music-selected-info{
+    margin-right: 30px;
+}
+.music-selected .music-name{
+    font-size: 14px;
+}
+.music-selected .music-info{
+    font-size: 12px;
+    color: var(--bar-color);
+}
 .prefer-icon{
     color:var(--bar-color);
     display:flex;
@@ -105,7 +119,7 @@ img{
     align-items: center;
 }
 .volumebar{
-    width: 60%;
+    width: 55%;
 }
 .volumebar .bar{
     width: 100%;
@@ -130,6 +144,10 @@ img{
 @media (max-width: 576px){
     .sidebar{
         width: 50px;
+    }
+    .music-selected-info{
+        margin-right: 10px;
+        margin-left: 5px;
     }
 }
 
