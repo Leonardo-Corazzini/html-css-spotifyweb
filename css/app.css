@@ -1,9 +1,17 @@
+:root{
+    --player-color: #282828;
+    --sidebar-color: #000000;
+    --musicsection-color: #141922;
+}
 /* RESET RULES */
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 
+}
+img{
+    width: 100%;
 }
 .main-view{
     height: 100vh;
@@ -12,6 +20,25 @@
 }
 .main-page{
     flex-grow: 1;
+    display: flex;
+}
+.sidebar{
+    width: 230px;
+    flex-shrink: 0;
+    background-color: var(--sidebar-color);
+}
+.music-section{
+    flex-grow: 1;
+    background-color: var(--musicsection-color);
+}
+.player{
+    background-color: var(--player-color);
+    display: flex;
+    justify-content: space-between;
+}
+.music-selected{
+    display: flex;
+
 }
 /* DEBUG RULES */
 .debug .main-view{
