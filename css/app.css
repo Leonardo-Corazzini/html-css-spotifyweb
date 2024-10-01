@@ -1,0 +1,23 @@
+/* RESET RULES */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+.main-view{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-page{
+    flex-grow: 1;
+}
+/* DEBUG RULES */
+.debug .main-view{
+    border: 2px solid red;
+}
+
+.debug .main-page{
+    border: 2px solid blue;
+}
