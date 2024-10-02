@@ -19,6 +19,13 @@ img{
     width: 100%;
     display: block;
 }
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+ul,li{
+    list-style:none;
+}
 /* MAIN STYLE */
 .main-view{
     height: 100vh;
@@ -34,6 +41,15 @@ img{
     flex-shrink: 0;
     background-color: var(--sidebar-color);
     padding: 20px;
+    color: var(--bar-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.sidebar > *{
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .sidebar .logo{
     width: 140px;
@@ -45,6 +61,29 @@ img{
     flex-grow: 1;
     background-color: var(--musicsection-color);
 }
+
+.menu img,.sidebar-footer img{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+.menu > *{
+    display: flex;
+}
+.menu-info{
+    color: var(--bar-color);
+}
+.sidebar-footer{
+    margin-top: auto;
+}
+.sidebar-footer > *{
+    display: flex;
+    
+}
+
+/* .menu .menu-info{
+    color: white;
+} */
 /* PLAYER STYLE */
 .player{
     background-color: var(--player-color);
@@ -137,6 +176,7 @@ img{
     width: 20%;
     background-color: white;
 }
+
 /* MEDIA QUERIES */
 @media (max-width: 992px){
 
