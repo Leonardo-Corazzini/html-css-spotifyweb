@@ -81,9 +81,9 @@ ul,li{
     
 }
 
-/* .menu .menu-info{
-    color: white;
-} */
+.playlist-name > *{
+    margin-bottom: 10px;
+}
 /* PLAYER STYLE */
 .player{
     background-color: var(--player-color);
@@ -202,6 +202,9 @@ ul,li{
     .music-selected-info{
         margin-right: 10px;
         margin-left: 5px;
+    }
+    .dp-xs-none{
+        display: none;
     }
 }
 
