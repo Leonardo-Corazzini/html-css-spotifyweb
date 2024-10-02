@@ -11,6 +11,7 @@ html{
     --white: #FFFFFF;
     --white-no-selected: rgb(255,255,255,0.3);
     --white-md: rgb(255,255,255,0.5);
+    --musicsection-color-md: #080b1285;
 
 
 }
@@ -55,14 +56,17 @@ ul,li{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    
 }
 .sidebar > *{
     row-gap: 15px;
     display: flex;
     flex-direction: column;
+    
 }
 .sidebar .logo{
     width: 140px;
+    
 }
 .logo-sm{
     display: none;
@@ -70,25 +74,46 @@ ul,li{
 .music-section{
     flex-grow: 1;
     background-color: var(--musicsection-color);
+    overflow-y: scroll;
+}
+.music-section-header{
+    background-color: var(--musicsection-color-md);
+    display: flex;
+    padding: 20px 5px 25px;
+}
+.upgrade-button{
+    border: 2px solid var(--white);
+    border-radius: 999px;
+    color: var(--white);
+    margin-left: auto;
+    padding: 12px 40px;
+    text-transform: uppercase;
+
 }
 
-.menu img,.sidebar-footer img{
+a img{
     height: 25px;
     width: 25px;
     display: block;
+    opacity: 0.3;
+    
+    
 }
 .menu > *{
     display: flex;
     gap: 7px;
     align-items: center;
+    padding-left: 20px;
+    
 }
-.green-bar{
-    position: absolute;
-    height: 35px;
-    width: 3px;
-    background-color: var(--brand-color);
-    left: 0px;
+.menu{
+    margin-left: -20px;
+    
+    
+   
+    
 }
+
 
 .sidebar-footer{
     margin-top: auto;
@@ -221,10 +246,22 @@ ul,li{
     background-color: white;
 }
 /* HOVER RULES */
-/* a:hover{
-    color: var(--white);
-} */
 
+.menu a:hover{
+    border-left: 2px solid var(--brand-color);
+    
+}
+.plus-icon:hover{
+    background-color: var(--white);
+}
+a img:hover,a:hover{
+    opacity: 1;
+    color: var(--white);
+}
+
+/* .upgrade-button:hover{
+
+} */
 /* MEDIA QUERIES */
 @media (max-width: 992px){
 
@@ -247,12 +284,26 @@ ul,li{
     .logo-sm{
         display: block;
     }
-    .music-selected-info{
-        margin-right: 10px;
-        margin-left: 5px;
-    }
+ 
     .dp-xs-none{
         display: none;
+    }
+    .menu{
+        margin-left: -8px;
+    }
+    .menu > *{
+        padding-left: 8px;
+    }
+    .music-selected,.volume{
+        width: 100px;
+    }
+    .music-selected{
+        justify-content: center;
+        gap: 10px;
+    }
+    .volume{
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
 
