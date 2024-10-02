@@ -258,6 +258,16 @@ a img:hover,a:hover{
     opacity: 1;
     color: var(--white);
 }
+i:hover{
+    cursor: pointer;
+}
+.play-button:hover{
+    transform: scale(1.5);
+}
+/* .upgrade-button:hover{
+    transform: scale(1.5);
+    
+} */
 
 /* .upgrade-button:hover{
 
