@@ -74,12 +74,32 @@ ul,li{
 .music-section{
     flex-grow: 1;
     background-color: var(--musicsection-color);
-    overflow-y: scroll;
+    
 }
 .music-section-header{
     background-color: var(--musicsection-color-md);
     display: flex;
     padding: 20px 5px 25px;
+   
+   
+}
+
+.music-section-body{
+    overflow-y: scroll;
+    display: flex;
+    justify-content:center ;
+}
+.navabar-music-section{
+    display: flex;
+    gap: 30px;
+    color: var(--white-no-selected);
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+
+}
+.section-link{
+    text-transform: uppercase;
 }
 .upgrade-button{
     border: 2px solid var(--white);
