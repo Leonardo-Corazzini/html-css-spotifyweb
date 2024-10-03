@@ -58,6 +58,9 @@ ul,li{
     row-gap: 20px;
     position: relative;
     
+
+    
+    
 }
 .sidebar > *{
     row-gap: 15px;
@@ -83,18 +86,18 @@ ul,li{
     background-color: var(--musicsection-color-md);
     display: flex;
     padding: 20px 5px 25px;
-    /* position: absolute; */
-    width: 100%;
+    position: fixed;
+    width:calc(100% - 230px);
     z-index: 999;
    
 }
 
 .music-section-body{
     padding: 20px 5px;
-    display: flex;
+    /* display: flex;
     justify-content:center;
-    flex-direction: column;
-    overflow-y: scroll;
+    flex-direction: column; */
+    height: 0;
     row-gap: 30px;
     color: var(--white-no-selected);
    
@@ -102,7 +105,7 @@ ul,li{
 .navabar-music-section{
     display: flex;
     gap: 30px;
-   
+    padding-top: 90px;
     flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: center;
@@ -370,7 +373,7 @@ i:hover{
     transform: scale(1.5);
 }
 .upgrade-button:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     
 }
 .music-card:hover{
@@ -457,6 +460,18 @@ i:hover{
         left: -5px;
       
         
+    }
+    .music-section-header{
+      
+        width:calc(100% - 50px);
+    
+       
+    }
+}
+@media (max-height: 750px)
+{
+    .playlist-name{
+        display: none;
     }
 }
 
