@@ -76,13 +76,14 @@ ul,li{
     flex-grow: 1;
     background-color: var(--musicsection-color);
     overflow-y: auto;
+    position: relative;
     
 }
 .music-section-header{
     background-color: var(--musicsection-color-md);
     display: flex;
     padding: 20px 5px 25px;
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     z-index: 999;
    
@@ -93,12 +94,14 @@ ul,li{
     display: flex;
     justify-content:center;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: scroll;
+    row-gap: 30px;
+    color: var(--white-no-selected);
 }
 .navabar-music-section{
     display: flex;
     gap: 30px;
-    color: var(--white-no-selected);
+   
     flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: center;
@@ -119,6 +122,12 @@ ul,li{
 .music-selection-title{
     padding-left: 15px;
     margin-bottom: 25px;
+    font-size: 25px;
+}
+.music-selection-subtitle{
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 14px;
 }
 .music-selection{
     display: flex;
@@ -130,8 +139,16 @@ ul,li{
     width: calc(100% / 6);
     flex-shrink: 0;
     padding: 0px 15px;
+    text-align: center;
     
     
+}
+.radius-card{
+    border-radius: 50%; 
+}
+.card-title{
+    font-size: 16px;
+    margin: 20px 0px 10px;
 }
 
 a img{
@@ -205,7 +222,8 @@ a img{
     padding: 15px 10px 25px;
     align-items: center;
     gap: 20px;
-    
+    position: fixed;
+    bottom: 0px;
 }
 .music-selected{
     display: flex;
