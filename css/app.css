@@ -85,7 +85,7 @@ ul,li{
 .music-section-header{
     background-color: var(--musicsection-color-md);
     display: flex;
-    padding: 20px 5px 25px;
+    padding: 30px 25px 35px;
     position: fixed;
     width:calc(100% - 230px);
     z-index: 999;
@@ -126,6 +126,7 @@ ul,li{
 }
 .music-selection-title{
     padding-left: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-size: 25px;
 }
