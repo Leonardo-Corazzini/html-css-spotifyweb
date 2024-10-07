@@ -105,7 +105,7 @@ ul,li{
 .navabar-music-section{
     display: flex;
     gap: 30px;
-    padding-top: 90px;
+    padding-top: 120px;
     flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: center;
